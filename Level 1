@@ -1,2 +1,8 @@
 Enter the password which you obtained from Level 0 and login to Level 1
-This level is similar to Level 0
+
+Advice - learn to use cat instead of vim or some other text editor. Cat displays the content of the file. Text editors can mess up things at times, 
+and moreover you're not always allowed to copy from a vim file, as we saw the hard way.
+- is recognized as STDIN bt the cat command. So directly writing cat - won't display file contents, try this out yourself.
+
+What you should do is instead tell cat that you are indeed trying to look at the file. Any file is identified by its file path. So write
+an absoulte/relative path for the file when doing cat.
