@@ -1,0 +1,2 @@
+Use ssh command to connect to a remote host.
+To connect to a given port on ssh, use the -p extension to ssh followed by the port number.
