@@ -1,2 +1,3 @@
 Use ssh command to connect to a remote host.
 To connect to a given port on ssh, use the -p extension to ssh followed by the port number.
+Use ls command to find the file where password is stored. Then use this password to log into bandit1.
