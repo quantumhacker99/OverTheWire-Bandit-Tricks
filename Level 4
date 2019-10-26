@@ -1,0 +1,23 @@
+This one is going to be way bigger than the previous ones, so buckle up.
+
+Human readable here is taken to mean something in ASCII 
+
+We are going to have to parse through files. So use the find command
+
+Executable files - It's also called a binary file. The read-to-run version of a file. Like a.out in C or a .class file in Java
+So clearly an executable file won't be in human readable format. Those reading this have probably experimented by opening an executable
+at some point, only to get a bunch of gibberish symbols. So our first clue is to only look at non-executable files. Only those are human
+readable.
+
+In this exercise writing find ! -executable just displays all of them, meaning that we haven't narrowed down on anything. So we have to 
+go further.
+
+What else can we do? Notice that we've said human-readable contains ASCII text. So let's search for files which have ASCII text.
+
+Grep command : It allows us to search for a given string in a given file.
+
+Grep is going to be useful. We want to apply grep iteratively to all the files.
+
+Xargs command - it builds and executes command lines from standard input.
+xargs file means that we are taking it from the file instead
+
