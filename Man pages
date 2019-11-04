@@ -1,0 +1,8 @@
+This assumes that you have a Linux system. I think it's a safe assumption since IIITB asks us to download Linux before coming.
+
+Man pages are your friend. Seriously. When you don't know what a command is doing, use man pages. It's pretty simple to access
+one, just write "man <command_name>". You'd get an entire page of text. It's in fact usually more useful than those online tutorials
+you see out there. Only if you don't understand the man pages do you go there. 
+Another reason why man pages are good, for the skeptical of you reading this, is because man pages are offline. So you don't have to 
+access the Internet for them.
+
