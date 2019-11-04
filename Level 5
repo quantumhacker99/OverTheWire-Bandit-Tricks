@@ -1,0 +1,24 @@
+So here is where you have to be smart. Because you want to take the minimum time possible to solve a question.
+
+Use find -size 1033c directly. as manu
+You see that there is only one file which has size 1033 byte size. So you get your answer, and typing time is also minimum.
+
+But you won't always have something this simple. I would advise to first try checking size as many would be non-executable
+
+So now to check non-executable, we write find . ! -executable. This searches for all the non-executable files in the present directory.
+
+As we have seen, xargs file  is like an iterator through all the files in the directory. So we use this in combination with grep command
+to find ASCII text.
+Well actually you can get the answer from here itself. In order to make it better we use the next 
+
+The next thing we use is awk. A detailed explanation can be found in the manual pages for it.
+
+Awk helps us in scanning line by line and splitting input into different fields.
+awk -F means to read from a file instead of the command line. And one advantage of awk is that it lets you access each column. This will be
+useful for reasons to be seen below.
+
+Actually the output of the grep command is " blah blah blah file path" + "ASCII text, with very long lines". But we don't want the 
+second part. Luckily for us, the ASCII... stuff is in another column. 
+So what do we do? We use awk to access the first column only. That gives us the required answer.
+
+So final answer : find . -size 1033c ! -executable|xargs file|grep "ASCII text" |awk -F: '{print $1}'
