@@ -6,3 +6,4 @@ and how the encryption of Enigma was broken (they searched for Heil Hitler).
 It is also confirmation that you're looking at a Caesar cipher. The second word has ff where ss is supoosed to be present in password.
 Look at the lengths of the first 3 words too. Run the 4th word through a Caesar cipher cracker and you have your answer.
 
+update : On the shell you can you the command |tr '[a-z]' ['n-za-m'] for rotation of characters by 13.
