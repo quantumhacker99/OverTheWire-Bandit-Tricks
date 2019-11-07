@@ -1,0 +1,7 @@
+(You will find one link telling you a command which dumps the found files into a file. Sounds tempting but don't do it. You aren't allowed
+to write files in their systems so permission will be denied. If you didn't find that link when Googling for it forget it. I did)
+
+Use man find to find out how to look for user and group and everything.
+
+Now go all the way to the root from bandit6, that is what "whole server" means. Combine the three requirements over there and note
+that only one of the files is accessible to you. Note that it also says bandit7password. Cat that for the answer
