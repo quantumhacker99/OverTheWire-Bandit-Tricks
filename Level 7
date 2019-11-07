@@ -1,0 +1,4 @@
+DO NOT TRY CATTING THE DATA.TXT!!!
+IT is a huge file your system won't even be able to ctrl+C promptly
+
+So instead use grep millionth data.txt. That gives you the entire line.
