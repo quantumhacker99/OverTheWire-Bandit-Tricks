@@ -1,0 +1,3 @@
+There's a command called string which prints the strings out. So we used the strings data.txt to print them all out. They said
+it starts with many =='s so use grep to narrow it down. We still narrowed it down to only like 3 strings. Which were human readable.
+We used our brain to know which is the password. Not sure entirely if it was telling us "the password is..." or not.
