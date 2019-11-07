@@ -1,0 +1,5 @@
+We have to basically print the unique line. uniq -u returns it. But where people go wrong is that they don't sort it
+first. Uniq works based on the sorting (think about why it may be true!)
+
+So you have to sort and then get the unique line and cat it.
+To do this, pipeline all. cat data.txt | sort| uniq -u should work
