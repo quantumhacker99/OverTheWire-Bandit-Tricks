@@ -1,0 +1,8 @@
+This one is interesting.
+Just use cat data.txt. Then you see that the text has been encrypted with a Caesar cipher. Well, maybe there's a way in Linux but 
+we just used an online Caesar cipher. But to make your life easier, notice that the first three words are "THe password is". Why?
+Obviously the password doesn't have spaces in it. And we've seen them use these words before. This is in fact how people break codes,
+and how the encryption of Enigma was broken (they searched for Heil Hitler). 
+It is also confirmation that you're looking at a Caesar cipher. The second word has ff where ss is supoosed to be present in password.
+Look at the lengths of the first 3 words too. Run the 4th word through a Caesar cipher cracker and you have your answer.
+
