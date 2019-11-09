@@ -4,5 +4,7 @@ password to access. And this level gives the password.
 
 https://support.rackspace.com/how-to/logging-in-with-an-ssh-private-key-on-linuxmac/
 The above is a good resource to find out what to do.
+Basically copy the private key to your machine, change the permissions to 600 using chmod. And then use ssh -i to read the key from the
+file and then connect.
 
 PS - The "Begin" and "End" aren't comments. Copy that too
