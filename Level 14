@@ -1,0 +1,14 @@
+For this one you need to connect to your local host from the remote host (well well well how the turntables...)
+
+To do that, first find the password. 
+Then check the man page of the nc command. The most important piece of information here, to me, at least for this level,is :
+In  the  simplest usage, "nc host port" creates a TCP connection to the given port on the given target host.  Your standard input is then sent to the host, and anything that comes back across
+       the connection is sent to your standard output.  This continues indefinitely, until the network side of the connection shuts down.  Note that this behavior is different from most other appli‐
+       cations which shut everything down and exit after an end-of-file on the standard input.
+
+There. 
+Now we have to "submit" our password to the localhost. First what you do is use nc to open a connection to localhost <port number>
+Then STDIN will open, enter the password there.
+
+To make it easier, you can use pipelining. Do echo <password> | nc... stuff. Then what happens is that it gets opened and automatically
+echoes it (check man echo if you don't know it) to the localhost. Then you are given the password to level 15.
