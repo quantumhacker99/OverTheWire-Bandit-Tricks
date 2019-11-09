@@ -1,0 +1,8 @@
+This one is related to public-key encryption. Hard to explain exactly what is going on, but know that there are 2 keys for encryption.
+Basically, the private key is kept away from everyone else. So the point is that if you had the private key you wouldn't need a 
+password to access. And this level gives the password.
+
+https://support.rackspace.com/how-to/logging-in-with-an-ssh-private-key-on-linuxmac/
+The above is a good resource to find out what to do.
+
+PS - The "Begin" and "End" aren't comments. Copy that too
