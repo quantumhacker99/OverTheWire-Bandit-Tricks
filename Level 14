@@ -12,3 +12,5 @@ Then STDIN will open, enter the password there.
 
 To make it easier, you can use pipelining. Do echo <password> | nc... stuff. Then what happens is that it gets opened and automatically
 echoes it (check man echo if you don't know it) to the localhost. Then you are given the password to level 15.
+
+(Looks like the thing you write first is executed second - writing echo after nc doesn't work it just prints it in your terminal.)
