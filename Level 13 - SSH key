@@ -1,0 +1,9 @@
+This one is related to public-key encryption. Hard to explain exactly what is going on, but know that there are 2 keys for encryption.
+Basically, the private key is kept away from everyone else. So the point is that if you had the private key you wouldn't need a 
+password to access. And this level gives the password.
+
+What you do is, you get the private key. Then, copy the private key. You can exit the Bandit13 server now. Then change permissions using
+chmod to 600. This is important, because if you don't your file will get rejected for being too public (600 only allows Owner User and 
+Group). Then use ssh -i to read key from the file and connect, something like ssh -i file_name bandit14....
+
+PS - The "Begin" and "End" aren't comments. Copy that too
