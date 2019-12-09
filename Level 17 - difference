@@ -1,0 +1,5 @@
+Use diff command to find between passwords.old and passwords.new.
+That gives you the password.
+This one is pretty easy.
+
+Reference - https://www.geeksforgeeks.org/diff-command-linux-examples/
