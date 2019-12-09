@@ -1,0 +1,14 @@
+One thing that misled me was that I thought setuid was a command. It's not. It's just a flag which allows user to run executables.
+
+So actually this thing isn't so complicated. What I advise you to do is to first go to etc/bandit_pass. Then you'll see passwords of 
+every level. Try catting bandit20. It won't work because you don't have required permissions. 
+So what do you do then?
+Well, use cd without arguments to go back to your ~ directory(I hope you know this by now). Then use ls to see what is given to you.
+You get something called bandit20-do in red. So that means it has elevated permissions. If you don't know what that means, read the 
+Wikipedia article on setuid.
+Now a mistake I made was trying to cat bandit20-do to get some useful information out of it. That's stupid, don't do that.Because it's
+an executable (that's the point of setuid). Instead you have to use it. How do you use it? How do run the a.out executable?
+Run this the same way.
+First just run without passing any arguments. The terminal itself tells you what you can do with it. Now you realize that you can use
+this executable to actually do stuff. So that's what you do. You use your executable to open the bandit20
+I don't think giving you the command is required or useful. So I'll let you figure it out yourself.
