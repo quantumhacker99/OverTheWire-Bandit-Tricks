@@ -1,0 +1,21 @@
+To start off with this level, I advise you to try opening a connection with nc.
+You will see that the password doesn't work. Why is that?
+The reason is that the password to the next level has been encrypted using SSL encryption.So as our password isn't encrypted it will not 
+work.
+So what is the solution?
+We need to establish a connection to a remote server which speaks SSL/TLS (you'd understand better after a Computer Networks course
+but the idea is you'd still understand now).
+So for that we write openssl s_client. OpenSSL is your interface for SSL and s_client implements a client which can establish the 
+connection.
+Write -connect after that. This is like nc, it opens a connection to a host with specified port number. If you don't specify one the 
+default is port 4443.
+So the command now is openssl s_client -connect localhost::30001.
+
+Well apparently, you should see a Heartbeating error now. This is not something I got so I can't confirm. But the idea is to use
+-ign_eof along with your connection. That prevents it on closing the connection the moment it reaches end of file. Again I cam't
+verify. But what I can say is that you don't get the required password, because it closes on reaching the eof..
+
+So the command if finally openssl s_client -ign_eof -connect localhost::30001 (don't put -ign_eof after connect!That's like telling it
+to connect to -ign_eof)
+
+Note - don't be naive. Pipeline this command with echo as well so that the password is entered without you doing it again.
