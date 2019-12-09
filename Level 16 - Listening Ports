@@ -1,0 +1,10 @@
+Check online for how to find listening ports and you'll find many articles telling you to use 'sudo netstat', 'sudo nmap', etc.
+Don't do that, you don't have sudo access, remember!
+
+Instead, use nmap -p <lower_bound>-<upper_bound> <server_host_name>
+Then you get a list of ports which have server listening on them. I got back just two ports, one closed and one open. Now use
+openssl to connect to both of them and see which one gives you the right answer. My hunch was that the one which was open was likely
+to give right answer and it worked.
+I got back an SSH private key. Then from level 13 you know what to do from then on
+
+Source - https://www.akashtrehan.com/writeups/OverTheWire/Bandit/level16/
