@@ -1,4 +1,4 @@
 First go to the directory specified.
 Do ls | grep cronjob, to check which are running cron jobs at the time.
-You get all. Just go through bandit 22 at first.
+You get all. Just go through bandit 22 at first. cat the given .sh file
 You get some tmp file. cat that for answer
