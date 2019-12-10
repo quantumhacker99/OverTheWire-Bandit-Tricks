@@ -1,0 +1,5 @@
+For this level, you're going to create a listener port. Then you run ./suconnect on that port. 
+You can use nc -l -p (some port number you want to create) to make the listening port.
+Then run suconnect on it. And enter the password
+
+You have to do nc -l -p in one terminal and ./suconnect in another terminal, for some reason.
