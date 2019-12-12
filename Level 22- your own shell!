@@ -1,1 +1,10 @@
-This is a level where I really felt like a hacker :) ! Let's go into why
+This is a level where I really felt like a hacker :) ! Let's go into why that is the case.
+
+So, look at the shell files they've given in /etc/cron.d. You get bandit22.sh,bandit23.sh, bandit24.sh. Since we're looking for
+the password to bandit23, let's look at bandit23. Well if you want to confirm that we have to look at that file, you can cat
+the others. bandit22.sh is just what you saw last level, bandit24.sh you aren't allowed to look at.
+Anyways explore what's going on in the shell program.We leave this to you because this is important for you to understand.
+
+All I can say is, shell and bash are related. When you execute the script you'll realize that you get the current password of 
+the level copied to some file. So try to exploit that and run a command which copies the password of bandit23 to some file,
+get which file that is and then access it. This part is fun, so we'll leave it to you!
