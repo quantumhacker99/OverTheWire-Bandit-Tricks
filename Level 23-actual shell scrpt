@@ -1,0 +1,35 @@
+Well, the last one was just a shell command. Now you get to write an actual shell script. You also get to understand
+the point of why it's a cronjob this level.
+First try what we did for bandit23. Did it work?
+No, because it turns out there is nothing in the file you get after following procedure of bandit23.So we need to try something
+new.
+So go to /etc/cron.d. Then cat cronjob_bandit24. You get some .sh file again.
+cat the .sh file. I was going to tell you to run it first, but it is much better to find out what it does before executing 
+it. This is a lesson for your entire security career too, find out what it does before potentially deleting all your files :P.
+Again, try to understand it.
+Run that. Of course, it's already running in the background, but you do this for your satisfaction. 
+So you see a bunch of error messages. You're probably curious why. If you've understood the .sh file, it basically iterates 
+throughout the directory /var/spool/$(myname), and executes and deletes each= file.
+So this clearly means that you can write in /var/spool/$(myname).Useful for later.
+So now what do we have? We have the information that everything in /var/spool/$(myname) will be periodically executed and
+removed. 
+Last time we went with a hunch that it was stored in that /tmp/... file and it worked. But now as we did in beginning it didn't
+work. So we must make it work. We must make a .sh file which runs and copies password from bandit24 to wherever you want.
+
+Well, you have to write something. You are not allowed to write in etc/cron.d. So what do you do?
+Recall that you are allowed to write to /tmp/ directory. We've done that in a few levels. So if you remember which directory
+you used, go and write there. Else just mkdir something and write there.
+So write a .sh file. 
+This time we'll give you a hint:
+cat from the file you want to the file you want to write in ! This you'll know how to write from the previous level.
+You only really need one line header and one line for the script, so we'll let you figure it out.
+Now try running it there. you'll see you don't have access to bandit_pass. Hmm. That's odd. 
+So you can't run it there. What do you do then?
+Remember, you have a .sh file in /etc/cron.d which runs all the files of /var/spool/$(myname) periodically. So if you could
+get it to that directory, as it will be autorun you get your password!
+So what do you do?
+Well, you want bandit24's password, so you can copy it to /var/spool/bandit24. And you know you have write access, again.
+So that's why we get this idea. You could move it, but why'd you want to lose your file? So copy it to some .sh file there.
+Now try to ls that directory to see if it worked. Unfortunately you don't get ls access, so you can't.
+Now wait for maximum a minute and see if the password showed up in the text file you wanted it to show up in.
+There is your answer
