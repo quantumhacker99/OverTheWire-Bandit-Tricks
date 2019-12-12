@@ -1,0 +1,27 @@
+So you have a decent idea on how to write at least a very basic shell program. So you can finally feel like that hackerman
+you wanted to be when you joined college!
+I strongly advise you to not read this and do it yourself. Because it is very much doable without help beyond syntax which 
+you can Google.
+
+Still here?
+Sigh.
+
+Anyways, this is a level which requires you to write shell again. I mean, sure, you don't really NEED to write shell for this,
+but it's your call.
+So the question is that you have to connect to a daemon at some given port. You have to connect to it. Then you must enter the 
+password of the 24th level and some 4-digit number as a pincode to go along with it. The question doesn't give any information
+so the only thing we can do is brute force our way through by writing all of the four digit numbers.I mean sure, you can try
+doing it manually, but there are 10,000 of them, and also better things to do in life.
+
+So since I'm assuming you know how to program, your first idea should've been for loop. And for that, you need to write some 
+sort of program.
+So off we head to your tmp directory again.
+Write the shell program. I'm not going to explain this because I want to leave this to you.
+But anyways, so what you do is go back to your main directory.
+Then execute your .sh file and pipe that execution with connecting to your port. If you do this correctly (you should be able
+to, if you aren't then just go and Google piping) then you get... permission denied!
+
+Where did you go wrong?
+You forgot to chmod 777 the file! 
+So go do that and come back and run it.
+Now you've made it open so it should run. And then finally you get the password after many unsuccesful pincodes are passed.
