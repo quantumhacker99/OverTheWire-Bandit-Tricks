@@ -1,0 +1,11 @@
+So follow the same thing that you did for last level.
+You see that the password is xxxxx. So what now?
+Well, this is just a general hint. Many of these Bandit levels are just to teach you general tactics and also in this case
+about Git itself. No reason for a beginner to think in the following direction. But I'm going off track.
+Anyways use git log. 
+You see the history of commits. So `now your idea should be to see the differences between each commit. The motto is that
+maybe the original password was written but then was changed to xxxxx. This is why I feel these levels are more to teach you
+concepts than be actual situations, I'd have just written xxxx without writing the original password first!
+Anyways use git log -p. Then you can see what was added in each commit.
+So you can see that in one commit there was a password which got changed to xxxx.
+There you go
