@@ -21,3 +21,4 @@ Grep is going to be useful. We want to apply grep iteratively to all the files.
 Xargs command - it builds and executes command lines from standard input.
 xargs file means that we are taking it from the file instead
 
+Additionaly file command determines the file type. It could also be useful.
